@@ -5,14 +5,7 @@ import Link from "next/link";
 
 class MyDocument extends Document {
   render() {
-    const navigation = [
-      { link: "/services", text: "Cleaning Services" },
-      { link: "/cleaning-process", text: "Our Cleaning Process" },
-      { link: "/cleaning-tips", text: "Cleaning Tips" },
-      { link: "/contact", text: "Contact Us" },
-      // { link: "/special-offers", text: "Special Offers" },
-      // { link: "/why", text: "Why Us" },
-    ];
+
     return (
       <Html>
         <Head>
@@ -22,10 +15,8 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <Navbar navigation={navigation} />
           <Main />
           <NextScript />
-          <Footer navigation={navigation} />
         </body>
       </Html>
     );

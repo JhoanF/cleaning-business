@@ -6,13 +6,12 @@ import React from 'react'
 const Contact = () => {
     return (
         <Container>
-            <div className="flex flex-col md:flex-row">
-                <div className='w-11/12'>
-                    <h1 className="text-4xl font-bold text-center">Contact Us</h1>
-                    <ContactForm />
-                </div>
-                <div className="w-full">
+            <div className="flex flex-col md:flex-row justify-center">
+                <div className="mb-4 md:mb-0 md:w-1/3">
                     <ContactInfo />
+                </div>
+                <div className="md:w-1/3">
+                    <ContactForm />
                 </div>
             </div>
 

@@ -19,7 +19,7 @@ export const Benefit = (props: any) => {
                             alt="Health Benefits"
                             height="500"
                             width="500"
-                            className={`rounded-lg ${reverse ? 'float-left' : 'float-right'}`}
+                            className={`shadow-2xl rounded-lg ${reverse ? 'float-left' : 'float-right'}`}
                         />
                     </div>
                 }

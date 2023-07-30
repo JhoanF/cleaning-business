@@ -12,4 +12,10 @@
     line-height: 1.85;
     font-size: large;
   }
+
+  .card-image {
+    width: 100%;
+    height: 300px;
+    
+  }
 }

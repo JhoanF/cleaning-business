@@ -5,13 +5,26 @@ const ContactForm: React.FC = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (event: React.FormEvent) => {
+    const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
 
-        // Your form submission logic goes here
-        // For example, you can send the form data to your backend or display a success message
-        console.log('Form submitted');
-    };
+        const data = {
+            name,
+            email,
+            message,
+            not_a_bot: true,
+        }
+        const response = await fetch('/api/contact', {
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            method: 'POST',
+        })
+
+        const result = await response.json()
+        alert(`${result.message}`)// TODO: finish this wire up
+    }
 
     return (
         <form onSubmit={handleSubmit} className="w-full mx-auto p-4 bg-white shadow-md rounded-lg">
@@ -55,6 +68,7 @@ const ContactForm: React.FC = () => {
                     required
                     className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-yellow-500"
                     rows={4}
+                    placeholder='Please include your phone number if you would like a call or text back.'
                 />
             </div>
             <div className="text-center">
