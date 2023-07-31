@@ -35,17 +35,19 @@ const Services = () => {
             <Head>
                 <title>Clean Bee - Our Services</title>
             </Head>
-            <main className="container mx-auto py-10">
-                <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
-                <p className="text-lg text-center mb-8">
-                    At Clean Bee, we offer a range of cleaning services to cater to your unique needs. Choose from our list of services below to experience the magic of a sparkling clean home or office.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {services.map((service, index) => (
-                        <Card key={index} title={service.title} description={service.description} image={service.image} />
-                    ))}
-                </div>
-            </main>
+            <Container>
+                <main className="container mx-auto py-10">
+                    <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
+                    <p className="text-lg text-center mb-8">
+                        At Clean Bee, we offer a range of cleaning services to cater to your unique needs. Choose from our list of services below to experience the magic of a sparkling clean home or office.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {services.map((service, index) => (
+                            <Card key={index} title={service.title} description={service.description} image={service.image} />
+                        ))}
+                    </div>
+                </main>
+            </Container>
         </div>
     );
 };

@@ -3,7 +3,6 @@ import '@/css/tailwind.css'
 import type { AppProps } from 'next/app'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer';
-import Container from '@/components/container';
 
 export default function App({ Component, pageProps }: AppProps) {
   const navigation = [
@@ -15,9 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme='light'>
       <Navbar navigation={navigation} />
-      <Container>
-        <Component {...pageProps} />
-      </Container>
+      <Component {...pageProps} />
       <Footer navigation={navigation} />
     </ThemeProvider>
   )

@@ -31,37 +31,39 @@ const CleaningProcess: React.FC = () => {
     ]
 
     return (
-        <div className="min-h-screen">
-            <div className="container mx-auto py-10">
-                <h1 className="text-4xl font-bold text-center mb-8">Our Cleaning Process</h1>
-                <p className="text-lg text-center mb-8">
-                    At Clean Bee, we believe that a clean home is more than just an orderly living space; it&apos;s a sanctuary that nurtures well-being and happiness. Our meticulous cleaning process is designed to transform spaces and create an environment where you can thrive. Here&apos;s a glimpse into the steps we take to ensure every corner of your home radiates cleanliness:
-                </p>
-                <section className="space-y-8">
-                    {processSteps.map((step) => (
-                        <div key={`${step.index}-process`} className="bg-white rounded-lg p-8">
-                            <div className="flex items-center mb-4">
-                                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-yellow-500 text-white font-bold">
-                                    {step.index}
+        <Container>
+            <div className="min-h-screen">
+                <div className="container mx-auto py-10">
+                    <h1 className="text-4xl font-bold text-center mb-8">Our Cleaning Process</h1>
+                    <p className="text-lg text-center mb-8">
+                        At Clean Bee, we believe that a clean home is more than just an orderly living space; it&apos;s a sanctuary that nurtures well-being and happiness. Our meticulous cleaning process is designed to transform spaces and create an environment where you can thrive. Here&apos;s a glimpse into the steps we take to ensure every corner of your home radiates cleanliness:
+                    </p>
+                    <section className="space-y-8">
+                        {processSteps.map((step) => (
+                            <div key={`${step.index}-process`} className="bg-white rounded-lg p-8">
+                                <div className="flex items-center mb-4">
+                                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-yellow-500 text-white font-bold">
+                                        {step.index}
+                                    </div>
+                                    <h2 className="text-2xl font-bold ml-2"> {step.title}</h2>
                                 </div>
-                                <h2 className="text-2xl font-bold ml-2"> {step.title}</h2>
+                                <p>
+                                    {step.description}
+                                </p>
                             </div>
-                            <p>
-                                {step.description}
+                        ))}
+                    </section>
+                    <section className="space-y-8">
+                        <div className="p-4 md:p-12">
+
+                            <p className="text-lg text-center mb-8">
+                                At Clean Bee, we are dedicated to making your home a place of joy, comfort, and happiness. Through our professional cleaning services and our belief in the importance of cleanliness, we strive to create a positive impact on your life and the spaces you cherish the most. Let us be your partners in embracing a cleaner, healthier, and happier home.
                             </p>
                         </div>
-                    ))}
-                </section>
-                <section className="space-y-8">
-                    <div className="p-12">
-
-                        <p className="text-lg text-center mb-8">
-                            At Clean Bee, we are dedicated to making your home a place of joy, comfort, and happiness. Through our professional cleaning services and our belief in the importance of cleanliness, we strive to create a positive impact on your life and the spaces you cherish the most. Let us be your partners in embracing a cleaner, healthier, and happier home.
-                        </p>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
-        </div>
+        </Container>
     );
 };
 
