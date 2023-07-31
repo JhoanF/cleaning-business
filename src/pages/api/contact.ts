@@ -1,8 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import sgMail from '@sendgrid/mail';
 
-type Data = {
-  message: string
+
+type ResponseData = {
+  message?: string
+  error?: string
 }
 
 type ContactRequest = {
@@ -12,9 +15,9 @@ type ContactRequest = {
   not_a_bot: boolean
 }
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<ResponseData>
 ) {
   if (req.method !== 'POST') {
     res.status(405).json({ message: 'Method not allowed' })
@@ -36,6 +39,28 @@ export default function handler(
     name,
   }
 
-  console.log(newMessage)
-  res.status(201).json({ message: "Successfully sent message! If you don't hear back from us within 24hrs, please call us directly." })
+
+  try {
+    sgMail.setApiKey('SG.3GDOYgCCSQiT2KNVICX94A.7-W-lV-8-hQCXPkV_klveKYNVXcN08OYlVm8MhXgRXM');
+
+    const msg = {
+      to: 'jenng151@gmail.com',
+      from: 'jhoan.o.falcongonzalez@gmail.com',
+      cc: 'jhoan.o.falcongonzalez@gmail.com',
+      subject: 'Clea Bee - Contact Form Submission',
+      text: `
+        Name: ${name}
+        Email: ${email}
+        Message: ${message}
+      `,
+    };
+
+
+    await sgMail.send(msg);
+
+    return res.status(200).json({ message: 'Email sent successfully' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return res.status(500).json({ error: 'An error occurred while sending the email' });
+  }
 }
