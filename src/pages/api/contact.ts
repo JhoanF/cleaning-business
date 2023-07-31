@@ -41,7 +41,9 @@ export default async function handler(
 
 
   try {
-    sgMail.setApiKey('SG.3GDOYgCCSQiT2KNVICX94A.7-W-lV-8-hQCXPkV_klveKYNVXcN08OYlVm8MhXgRXM');
+    const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY as string;
+
+    sgMail.setApiKey(SENDGRID_API_KEY);
 
     const msg = {
       to: 'jenng151@gmail.com',
