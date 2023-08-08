@@ -46,9 +46,9 @@ export default async function handler(
     sgMail.setApiKey(SENDGRID_API_KEY);
 
     const msg = {
-      to: 'jenng151@gmail.com',
+      to: 'justcleanbee@gmail.com',
       from: 'jhoan.o.falcongonzalez@gmail.com',
-      cc: 'jhoan.o.falcongonzalez@gmail.com',
+      cc: ['jhoan.o.falcongonzalez@gmail.com', 'jenng151@gmail.com'],
       subject: 'Clea Bee - Contact Form Submission',
       text: `
         Name: ${name}

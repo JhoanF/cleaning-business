@@ -9,7 +9,7 @@ const ContactInfo: React.FC = () => {
                 <span className="font-bold">Phone:</span> (239) 285-4056
             </p>
             <p className="text-lg mb-2">
-                <span className="font-bold">Email:</span> jenng151@gmail.com
+                <span className="font-bold">Email:</span> justcleanbee@gmail.com
             </p>
         </div>
     );

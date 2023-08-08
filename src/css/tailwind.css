@@ -18,4 +18,8 @@
     height: 300px;
     
   }
+
+  :root {
+    --toastify-color-success: #eab308 !important;
+  }
 }
