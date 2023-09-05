@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import logo from "../../public/img/beehive-logo-trans-1.png"
+import logo from "../../public/img/justcleanbee_logo_notext.png"
 
 export default function Footer(props: { navigation: { link: string; text: string; }[] }) {
     const navigation = props.navigation;
@@ -22,12 +22,12 @@ export default function Footer(props: { navigation: { link: string; text: string
                                     height="32"
                                     className="w-8"
                                 />
-                                <span>Clean Bee</span>
+                                <span>Just Clean Bee</span>
                             </Link>
                         </div>
 
                         <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-                            At Clean Bee, we take pride in being a family-owned and operated cleaning company. Founded with a passion for cleanliness and a commitment to exceptional service, our journey began right at home. As a family, we understand the value of a well-maintained living space and the positive impact it has on our daily lives.
+                            At Just Clean Bee, we take pride in being a family-owned and operated cleaning company. Founded with a passion for cleanliness and a commitment to exceptional service, our journey began right at home. As a family, we understand the value of a well-maintained living space and the positive impact it has on our daily lives.
                         </div>
 
                         <div className="mt-5">
