@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import logo from "../../public/img/justcleanbee_logo_notext.png"
+import logo from "../../public/img/jcb_logo_4.png"
 
 export default function Footer(props: { navigation: { link: string; text: string; }[] }) {
     const navigation = props.navigation;

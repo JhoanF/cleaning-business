@@ -17,7 +17,7 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                                     <span className="flex items-center space-x-2 text-2xl font-medium text-yellow-500 dark:text-gray-100">
                                         <span>
                                             <Image
-                                                src="/img/justcleanbee_logo_notext.png"
+                                                src="/img/jcb_logo_4.png"
                                                 alt="N"
                                                 width="78"
                                                 height="78"
