@@ -72,8 +72,7 @@ export default function Footer(props: { navigation: { link: string; text: string
                                 <Facebook />
                             </a>
                             <a
-                                // href="https://instagram.com/"
-                                href="/coming-soon"
+                                href="https://www.instagram.com/justcleanbee/"
                                 target="_blank"
                                 rel="noopener">
                                 <span className="sr-only">Instagram</span>
