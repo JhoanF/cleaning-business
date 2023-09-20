@@ -19,9 +19,9 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                                             <Image
                                                 src="/img/jcb_logo_4.png"
                                                 alt="N"
-                                                width="78"
-                                                height="78"
-                                                className="w-20"
+                                                width="42"
+                                                height="42"
+                                                unoptimized={true}
                                             />
                                         </span>
                                         <span>Just Clean Bee</span>
