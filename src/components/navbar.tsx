@@ -17,14 +17,15 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                                     <span className="flex items-center space-x-2 text-2xl font-medium text-yellow-500 dark:text-gray-100">
                                         <span>
                                             <Image
-                                                src="/img/jcb_logo_4.png"
+                                                src="/img/jcb_logo_7.png"
                                                 alt="N"
-                                                width="42"
-                                                height="42"
+                                                width="128"
+                                                height="64"
                                                 unoptimized={true}
+                                                className="w-[224px] md:w-[300px]"
                                             />
                                         </span>
-                                        <span>Just Clean Bee</span>
+                                        {/* <span>Just Clean Bee</span> */}
                                     </span>
                                 </Disclosure.Button>
                                 <Disclosure.Button

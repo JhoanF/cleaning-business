@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import logo from "../../public/img/jcb_logo_4.png"
+import logo from "../../public/img/jcb_logo_7.png"
 
 export default function Footer(props: { navigation: { link: string; text: string; }[] }) {
     const navigation = props.navigation;
@@ -18,11 +18,12 @@ export default function Footer(props: { navigation: { link: string; text: string
                                 <Image
                                     src={logo}
                                     alt="N"
-                                    width="32"
+                                    width="64"
                                     height="32"
-                                    className="w-8"
+                                    className="w-[224px] md:w-[300px]"
+                                    unoptimized={true}
                                 />
-                                <span>Just Clean Bee</span>
+                                {/* <span>Just Clean Bee</span> */}
                             </Link>
                         </div>
 
