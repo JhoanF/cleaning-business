@@ -42,7 +42,7 @@ const CleaningProcess: React.FC = () => {
                         {processSteps.map((step) => (
                             <div key={`${step.index}-process`} className="bg-white rounded-lg p-8">
                                 <div className="flex items-center mb-4">
-                                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-yellow-500 text-white font-bold">
+                                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white font-bold">
                                         {step.index}
                                     </div>
                                     <h2 className="text-2xl font-bold ml-2"> {step.title}</h2>

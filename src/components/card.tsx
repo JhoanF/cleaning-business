@@ -24,7 +24,7 @@ function Card(props: { title: string; description: string; image: string; }) {
                 </p>
                 <div className="flex">
                     <Link href="/contact">
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                        <button className="bg-yellow-400 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded">
                             Learn More
                         </button>
                     </Link>

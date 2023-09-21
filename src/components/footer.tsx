@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import logo from "../../public/img/jcb_logo_7.png"
+import logo from "../../public/img/jcb_logo_8.png"
 
 export default function Footer(props: { navigation: { link: string; text: string; }[] }) {
     const navigation = props.navigation;

@@ -20,7 +20,7 @@ const Hero = () => {
                                 href="/contact"
                                 target="_blank"
                                 rel="noopener"
-                                className="px-8 py-4 text-lg font-medium text-center text-white bg-yellow-600 rounded-md ">
+                                className="px-8 py-4 text-lg font-medium text-center text-white bg-yellow-400 rounded-md ">
                                 Find Your Local Clean Bee
                             </a>
                             <a

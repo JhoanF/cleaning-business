@@ -17,7 +17,7 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                                     <span className="flex items-center space-x-2 text-2xl font-medium text-yellow-500 dark:text-gray-100">
                                         <span>
                                             <Image
-                                                src="/img/jcb_logo_7.png"
+                                                src="/img/jcb_logo_8.png"
                                                 alt="N"
                                                 width="128"
                                                 height="64"
@@ -58,7 +58,7 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                                                 {item.text}
                                             </Disclosure.Button>
                                         ))}
-                                        <Disclosure.Button as={Link} href="/contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-yellow-600 rounded-md lg:ml-5">
+                                        <Disclosure.Button as={Link} href="/contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-yellow-400 rounded-md lg:ml-5">
                                             Request Estimate
                                         </Disclosure.Button>
 
@@ -83,7 +83,7 @@ const Navbar = (props: { navigation: { link: string; text: string; }[] }) => {
                 </div>
 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                    <Link href="/contact" className="px-6 py-2 text-white bg-yellow-600 rounded-md md:ml-5">
+                    <Link href="/contact" className="px-6 py-2 text-white bg-yellow-400 rounded-md md:ml-5">
                         Request an Estimate
                     </Link>
                 </div>
