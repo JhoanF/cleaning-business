@@ -65,8 +65,7 @@ export default function Footer(props: { navigation: { link: string; text: string
                                 <Twitter />
                             </a>
                             <a
-                                // href="https://facebook.com/"
-                                href="/coming-soon"
+                                href="https://www.facebook.com/profile.php?id=61551204641737"
                                 target="_blank"
                                 rel="noopener">
                                 <span className="sr-only">Facebook</span>
