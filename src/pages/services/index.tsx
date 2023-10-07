@@ -10,7 +10,7 @@ const Services = () => {
         {
             title: "Residential Cleaning",
             description: "Experience the bliss of a clean and organized home without lifting a finger. Our residential cleaning service covers all areas of your home, leaving no dust bunny unturned. Our expert cleaners will dust, vacuum, mop, and sanitize every corner, ensuring your living spaces shine brightly like never before.",
-            image: "/img/services/family-time-in-the-kitchen.jpg"
+            image: "/img/services/kitchen_accents.png"
         },
         {
             title: "Commercial Cleaning",
@@ -20,12 +20,12 @@ const Services = () => {
         {
             title: "Deep Cleaning",
             description: "For a comprehensive refresh, our deep cleaning service is the answer. Our team will go above and beyond to make every inch of your home or office spotless. We tackle hard-to-reach areas, grime buildup, and more, leaving your space buzzing with newfound freshness.",
-            image: "/img/services/cleaning-supply-flatlay-white.jpg"
+            image: "/img/services/deep_hazmat_clean.png"
         },
         {
             title: "Special Occasion Cleaning",
             description: "Planning a special event? We'll ensure your home is guest-ready with our special occasion cleaning service. Let us handle the cleaning while you focus on hosting and making wonderful memories with your loved ones.",
-            image: "/img/services/party-decorations.jpg"
+            image: "/img/services/9.png"
         }
     ]
 

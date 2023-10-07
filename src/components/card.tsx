@@ -6,7 +6,7 @@ function Card(props: { title: string; description: string; image: string; }) {
 
     const { image, title, description } = props
     return (
-        <div className="bg-white rounded-lg shadow-lg">
+        <div className="bg-white rounded-lg">
             <div className="flex items-center justify-center">
                 <Image
                     src={image}
