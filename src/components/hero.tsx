@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/container";
-import heroImg from "../../public/img/jcb_halloween_promo_1.png";
+import heroImg from "../../public/img/hire_cleaner.gif";
 
 const Hero = () => {
     return (
@@ -47,7 +47,6 @@ const Hero = () => {
                             className={"object-cover"}
                             alt="Hero Illustration"
                             loading="eager"
-                            placeholder="blur"
                         />
                     </div>
                 </div>
