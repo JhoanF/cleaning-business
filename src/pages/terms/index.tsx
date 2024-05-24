@@ -17,11 +17,11 @@ const Terms: React.FC = () => {
                     <p className="mb-4">
                         2. The client agrees to provide access to the premises at the scheduled cleaning time and ensure a safe environment for our cleaning team.
                     </p>
-                    <p className="mb-8">
+                    <p className="mb-4">
                         3. Any changes or additions to the service plan must be communicated in advance and may be subject to additional charges.
                     </p>
                     <p className="mb-8">
-                        4. The client agrees to receive text messages and emails from Just Clean Bee Cleaning Service. SMS and data rates may apply.
+                        4. The client agrees to receive text messages and emails from Just Clean Bee LLC. SMS and data rates may apply.
                     </p>
                     <h2 className="text-2xl font-bold mb-4">Cancellation Policy</h2>
                     <p className="mb-4">
